@@ -1,4 +1,6 @@
 import { getRequest } from "@/service/queryWrapper.js";
+import CustomDetails from '@/components/CustomDetails';
+import styles from "@/app/jobs/[id]/page.module.css";
 
 async function fetchJob(id) {
   try {
@@ -11,8 +13,15 @@ async function fetchJob(id) {
 
 export default async function JobDetails({ params }) {
   const { id } = params;
-  const { data } = await fetchJob(id);
+  const { data } = await fetchJob(id) || {};
+  
+  
   return (
-    <div>hello</div>
+    <div className={styles.main}>
+      <h2>Job details of #{data?.title}</h2>
+      <div className={styles.flexContainer}>
+        <CustomDetails job={data} />
+      </div>
+    </div>
   )
 }

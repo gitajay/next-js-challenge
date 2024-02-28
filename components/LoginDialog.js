@@ -11,14 +11,20 @@ function LoginDialog() {
   const dispatch = useDispatch();
   const { open } = useSelector((state) => state.user);
 
-  const handleClick = () => {
+  const handleSave = () => {
     dispatch(setUserData(name));
+    dispatch(setOpen(false));
+  }
+
+  const handleClose = () => {
+    setName('');
+    dispatch(setUserData(''));
     dispatch(setOpen(false));
   }
   
   return (
     <>
-      <Modal show={open} onHide={() => dispatch(setOpen(false))}>
+      <Modal show={open} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>Login</Modal.Title>
         </Modal.Header>
@@ -37,10 +43,10 @@ function LoginDialog() {
           </Form>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={() => dispatch(setOpen(false))}>
+          <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>
-          <Button variant="primary" disabled={!name} onClick={handleClick}>
+          <Button variant="primary" disabled={!name} onClick={handleSave}>
             Save Changes
           </Button>
         </Modal.Footer>
