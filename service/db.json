@@ -1,0 +1,9 @@
+{
+  "jobs": [
+    { "id": "1", "title": "Project Intern", "company": "Cognizant", "about": "Use Lorem Ipsum text.", "address": "1, John Street, Chennai", "applied": false },
+    { "id": "2", "title": "Junior developer", "company": "Infosys", "about": "Use Lorem Ipsum text.", "address": "1, John Street, Chennai", "applied": false },
+    { "id": "3", "title": "Project SME", "company": "TCS", "about": "Use Lorem Ipsum text.", "address": "1, John Street, Chennai", "applied": false },
+    { "id": "4", "title": "System engineer", "company": "Wipro", "about": "Use Lorem Ipsum text.", "address": "1, John Street, Chennai", "applied": false },
+    { "id": "5", "title": "System analyst", "company": "Tech M", "about": "Use Lorem Ipsum text.", "address": "1, John Street, Chennai", "applied": false }
+  ]
+}
