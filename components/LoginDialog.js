@@ -47,7 +47,7 @@ function LoginDialog() {
             Close
           </Button>
           <Button variant="primary" disabled={!name} onClick={handleSave}>
-            Save Changes
+            Login
           </Button>
         </Modal.Footer>
       </Modal>

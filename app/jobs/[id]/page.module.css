@@ -9,10 +9,8 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
-  align-items: center;
   padding: 1rem;
   min-height: 80vh;
-  gap: 20px;
 }
 .empty {
   text-align: center;
