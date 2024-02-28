@@ -12,12 +12,13 @@ async function fetchUser() {
 }
 
 export default async function Jobs() {
-  const { data } = await fetchUser();
+  const { data } = await fetchUser() || {};
   return (
     <div className={styles.main}>
       <h2>Job listing</h2>
+      {!data && <p className={styles.empty}>No Jobs posted!</p>}
       <div className={styles.flexContainer} >
-        {data.map(job => (
+        {data?.map(job => (
           <CustomCard key={job.id} job={job} />
         ))}
       </div>

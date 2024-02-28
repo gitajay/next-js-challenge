@@ -21,7 +21,7 @@ export default function Home() {
           <h2>
             Docs <span>-&gt;</span>
           </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
+          <p>Find in-depth information about features and API.</p>
         </a>
 
         <a
@@ -33,7 +33,7 @@ export default function Home() {
           <h2>
             Learn <span>-&gt;</span>
           </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
+          <p>Learn about this in an interactive course with&nbsp;quizzes!</p>
         </a>
 
         <a
@@ -45,7 +45,7 @@ export default function Home() {
           <h2>
             Templates <span>-&gt;</span>
           </h2>
-          <p>Explore starter templates for Next.js.</p>
+          <p>Explore starter templates for ease of life.</p>
         </a>
 
         <a
