@@ -2,7 +2,7 @@ import CustomCard from "@/components/CustomCard";
 import { getRequest } from "@/service/queryWrapper.js";
 import styles from "@/app/jobs/page.module.css";
 
-async function fetchUser() {
+async function fetchJobs() {
   try {
     const jobs = await getRequest('jobs');
     return jobs;
@@ -12,7 +12,7 @@ async function fetchUser() {
 }
 
 export default async function Jobs() {
-  const { data } = await fetchUser() || {};
+  const { data } = await fetchJobs() || {};
   return (
     <div className={styles.main}>
       <h2>Job listing</h2>
